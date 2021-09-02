@@ -55,7 +55,6 @@
     "webpack-dev-server": "^3.11.2",
     "webpack-merge": "^5.8.0"
   },
-  
   "engines": {
     "node": "^12 || >=14"
   },
@@ -72,6 +71,8 @@
     "url": "git@github.com:WeAreAthlon/frontend-webpack-boilerplate.git"
   },
   "scripts": {
+    "start": "gulp dev",
+    "default": "gulp default",
     "build": "webpack --config configuration/webpack.dev.config.js --mode=development",
     "watch": "webpack --config configuration/webpack.dev.config.js --mode=development --watch",
     "bundle": "npm install && npm run watch",
@@ -83,6 +84,12 @@
   },
   "target": "web",
   "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-beautify": "^3.0.0",
+    "gulp-nunjucks-render": "^2.2.3",
+    "gulp-plumber": "^1.2.1",
+    "nunjucks": "^3.2.3",
+    "webpack-stream": "^7.0.0",
     "yarn": "^1.22.11"
   }
 }
