@@ -55,6 +55,7 @@
     "webpack-dev-server": "^3.11.2",
     "webpack-merge": "^5.8.0"
   },
+  
   "engines": {
     "node": "^12 || >=14"
   },
@@ -80,5 +81,8 @@
     "lint:js": "eslint --ext .js src/js/",
     "stats": "webpack --config configuration/webpack.prod.config.js --mode=production --json > dist/stats.json && webpack-bundle-analyzer dist/stats.json"
   },
-  "target": "web"
+  "target": "web",
+  "dependencies": {
+    "yarn": "^1.22.11"
+  }
 }
