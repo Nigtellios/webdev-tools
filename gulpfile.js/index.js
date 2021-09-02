@@ -25,5 +25,5 @@ gulp.task('dev', function () {
 });
 
 gulp.task('build', function () {
-  return eries(parallel(templating, render, scripts));
+  return series(parallel(templating, render, scripts));
 });
