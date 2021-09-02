@@ -20,7 +20,10 @@ gulp.task('default', function () {
 });
 
 /** Run by `gulp dev` */
-gulp.task('dev', series(parallel(templating, render, scripts)));
+gulp.task('dev', function () {
+  return series(parallel(templating, render, scripts));
+});
 
-/** Run by `gulp build` */
-gulp.task('build', series(parallel(templating, render, scripts)));
+gulp.task('build', function () {
+  return eries(parallel(templating, render, scripts));
+});
